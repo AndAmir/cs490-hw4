@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <link rel='stylesheet' href={{ url_for('static', filename='style.css') }} />
+</head>
+
+<body>
+    <h1>Andrew's favorite TV shows are {{ my_shows[0] }}, {{my_shows[1]}}, {{my_shows[2]}}</h1>
+    <ol> 
+    {%for i in range(0, my_shows_len)%} 
+        {% if 'Mythbusters' in my_shows[i] %}
+            <li class="favorite">{{ my_shows[i] }}</li> 
+            <img src={{ my_shows_images[i] }} />
+            
+        {% else %}
+            <li>{{my_shows[i]}}</li>
+            <img src={{ my_shows_images[i] }} />
+        {% endif %}
+         
+    {%endfor%} 
+      
+    </ol> 
+</body>
+</html>

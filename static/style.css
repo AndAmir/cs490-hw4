@@ -1,0 +1,18 @@
+body{
+    background-color: lightgreen;
+    font-family: Arial;
+    margin:15px;
+}
+
+ol li{
+    font-size:36pt;
+}
+
+img {
+  max-height: 12%;
+  max-width: 12%;
+}
+
+.favorite{
+    color:blue;
+}
